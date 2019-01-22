@@ -1,6 +1,6 @@
 # uber_demo
 System Architecture
-> ![image](https://github.com/zzhou9/mini/Uber/master/SystemArchitecture.png)
+> ![image](https://github.com/zzhou9/mini-Uber/master/SystemArchitecture.png)
 
 
 Uber_simulation_System
