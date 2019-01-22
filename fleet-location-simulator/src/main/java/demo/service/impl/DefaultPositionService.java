@@ -16,11 +16,7 @@ public class DefaultPositionService implements PositionService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DefaultPositionService.class);
 
-//    @Autowired
-//    private KmlService kmlService;
 
-    //    @Autowired
-//    @LoadBalanced
     private RestTemplate restTemplate = new RestTemplate();
 
     @Value("${com.ross.fleet.location.ingest}")
@@ -30,14 +26,12 @@ public class DefaultPositionService implements PositionService {
         super();
     }
 
-    //    @HystrixCommand(fallbackMethod = "processPositionInfoFallback")
+
     @Override
     public void processPositionInfo(long id, CurrentPosition currentPosition, boolean exportPositionsToKml,
                                     boolean sendPositionsToIngestionService) {
 
-//        if (exportPositionsToKml) {
-//            this.kmlService.updatePosition(id, currentPosition);
-//        }
+
 
         if (sendPositionsToIngestionService) {
             this.restTemplate.postForLocation(fleetLocationIngest + "/api/locations", currentPosition);

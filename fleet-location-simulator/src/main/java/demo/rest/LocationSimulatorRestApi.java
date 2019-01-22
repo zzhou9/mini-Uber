@@ -1,8 +1,5 @@
 package demo.rest;
 
-/**
- * Created by root on 11/18/16.
- */
 import demo.model.DirectionInput;
 import demo.model.GpsSimulatorRequest;
 import demo.model.Point;
@@ -68,9 +65,7 @@ public class LocationSimulatorRestApi {
             instances.add(instance);
         }
 
-//        if (fixture.usesKmlIntegration()) {
-//            kmlService.setupKmlIntegration(instanceIds, NavUtils.getLookAtPoint(lookAtPoints), getKmlUrl(request));
-//        }
+
 
         return instances;
     }

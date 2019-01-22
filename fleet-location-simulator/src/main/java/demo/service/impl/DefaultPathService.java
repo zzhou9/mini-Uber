@@ -46,8 +46,7 @@ public class DefaultPathService implements PathService {
     @Autowired
     private Environment environment;
 
-//    @Autowired
-//    private Unmarshaller unmarshaller;
+
 
     public DefaultPathService() {
         super();
@@ -198,43 +197,7 @@ public class DefaultPathService implements PathService {
         return points;
     }
 
-    /* (non-Javadoc)
-     * @see frk.gpssimulator.service.KmlService#getCoordinates(java.io.File)
-     */
-//    @Override
-//    public final List<Point> getCoordinatesFromKmlFile(File kmlFile) {
-//
-//        final Kml kml;
-//        try {
-//            kml = (Kml) unmarshaller.unmarshal(new StreamSource(kmlFile));
-//        } catch (XmlMappingException | IOException e) {
-//            throw new IllegalStateException(e);
-//        }
-//
-//        final Document doc = (Document) kml.getFeature();
-//        List<Feature> features = doc.getFeature();
-//        List<Point> pointsToReturn = new ArrayList<Point>();
-//
-//        for (Feature feature : features) {
-//            if (feature instanceof Placemark) {
-//                final Placemark placemark = (Placemark) feature;
-//                if (placemark.getGeometry() instanceof LineString) {
-//                    final LineString lineString = (LineString) placemark.getGeometry();
-//                    List<Coordinate> coordinates = lineString.getCoordinates();
-//                    for (Coordinate coord : coordinates) {
-//                        Point point2 = new Point(
-//                                coord.getLatitude(),
-//                                coord.getLongitude());
-//                        pointsToReturn.add(point2);
-//                    }
-//                    break;
-//                }
-//            }
-//
-//        }
-//        return pointsToReturn;
-//
-//    }
+
 
     public void setObjectMapper(ObjectMapper objectMapper) {
         this.objectMapper = objectMapper;

@@ -32,7 +32,6 @@ public interface PathService {
     String getCoordinatesFromGoogleAsPolyline(DirectionInput directionInput);
 
 
-//    List<Point> getCoordinatesFromKmlFile(File kmlFile);
 
     List<ServiceLocation> getServiceStations();
 }

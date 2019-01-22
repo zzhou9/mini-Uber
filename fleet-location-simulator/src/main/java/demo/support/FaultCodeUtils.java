@@ -85,7 +85,6 @@ public class FaultCodeUtils {
 
     }
 
-    ;
 
     public static FaultCode getRandomFaultCode() {
         return faultCodes.get(ThreadLocalRandom.current().nextInt(faultCodes.size()));

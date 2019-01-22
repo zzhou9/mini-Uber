@@ -54,7 +54,6 @@ public class DefaultGpsSimulatorFactory implements GpsSimulatorFactory {
         if (kmlFile == null) {
             points = this.pathService.getCoordinatesFromGoogle(this.pathService.loadDirectionInput().get(0));
         } else {
-//            points = this.pathService.getCoordinatesFromKmlFile(kmlFile);
             points = new ArrayList<>();
         }
 
