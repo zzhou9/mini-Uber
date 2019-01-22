@@ -26,8 +26,7 @@ public class DefaultServiceLocationService implements ServiceLocationService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DefaultServiceLocationService.class);
 
-    //    @Autowired
-//    @LoadBalanced
+
     private RestTemplate restTemplate = new RestTemplate();
 
     /**
@@ -43,12 +42,7 @@ public class DefaultServiceLocationService implements ServiceLocationService {
      * @param currentPosition Will be enriched with the closest service location
      * @throws Exception
      */
-//	@HystrixCommand(
-//			commandKey="serviceLocations",
-//			commandProperties = {
-//					@HystrixProperty(name = "circuitBreaker.forceOpen", value = "true")
-//			},
-//			fallbackMethod = "handleServiceLocationServiceFailure")
+
     @Override
     public void updateServiceLocations(CurrentPosition currentPosition) {
 
