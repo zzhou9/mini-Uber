@@ -1,6 +1,10 @@
 # uber_demo
+System Architecture
+> ![image](https://github.com/zzhou9/mini-Uber/master/SystemArchitecture.png)
+
+
 Uber_simulation_System
-# Service Start Sequence
+##Service Start Sequence
 1. docker-compose up
 3. sh ./start-location-simulator.sh
 4. sh ./start-location-distribution.sh
