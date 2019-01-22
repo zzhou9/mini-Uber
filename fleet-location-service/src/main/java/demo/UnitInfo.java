@@ -15,25 +15,16 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 @RequiredArgsConstructor
 public class UnitInfo {
 
-    private String unitVin;
+    private final String unitVin;
     private String engineMake;
     private String customerName;
     private String unitNumber;
 
     @SuppressWarnings("unused")
-    UnitInfo() {
+     private UnitInfo() {
         this.unitVin = "";
     }
 
-    public UnitInfo(String vin) {
-    }
 
 
-    public String getUnitVin() {
-        return unitVin;
-    }
-
-    public void setUnitVin(String unitVin) {
-        this.unitVin = unitVin;
-    }
 }

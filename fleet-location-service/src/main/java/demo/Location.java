@@ -64,7 +64,6 @@ public class Location {
     @Embedded
     private FaultCode faultCode;
 
-    @SuppressWarnings("unused")
     private Location() {
         this.unitInfo = null;
     }
